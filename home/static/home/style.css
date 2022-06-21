@@ -1,0 +1,16 @@
+body{
+    background:while url("images/background.png") no-repeat;
+    background-position: center;
+    background-size: 10%;
+    height: 500px;
+    Border-top: 10px solid #ccc;
+}
+
+title{
+    color: #c80;
+    font-weight: bold;
+}
+
+li a {
+    color:green;
+}

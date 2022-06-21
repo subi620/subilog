@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+</head>
+<body>
+{% if latest_question_list %}
+    <ul>
+
+        <li><a href="{% url 'polls:list' question.id %}">{{question}}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>{{list_count}}</p>
+
+{% endif %}
+</body>
+</html>
